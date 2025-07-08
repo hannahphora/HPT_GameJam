@@ -7,7 +7,10 @@
 		{
 			"Name": "HPT_GameJam",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [
@@ -134,15 +137,17 @@
 			"Enabled": false
 		},
 		{
-			"Name": "VisualStudioSourceCodeAccess",
-			"Enabled": false
-		},
-		{
 			"Name": "XCodeSourceCodeAccess",
 			"Enabled": false,
 			"SupportedTargetPlatforms": [
 				"Mac"
 			]
 		}
+	],
+	"TargetPlatforms": [
+		"Linux",
+		"LinuxArm64",
+		"Mac",
+		"Windows"
 	]
 }
